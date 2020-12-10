@@ -1,14 +1,8 @@
 <template>
   <div class="hero">
     <div class="hero-content">
-      <img
-        src="https://res.cloudinary.com/mahana/image/upload/v1606767323/Website/daysaver-logo_bl3icj.png"
-        alt="Daysaver Migraine Logo"
-      />
-      <h1>
-        Save the Day,<br class="d-sm-none" />
-        Take Back Your Life
-      </h1>
+      <g-image src="~/assets/images/daysaver-logo.png" alt="Daysaver Migraine Logo"></g-image>
+      <h1>Take Back Your Life.</h1>
       <p>Help is coming soon...</p>
     </div>
   </div>
