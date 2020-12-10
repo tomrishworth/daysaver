@@ -56,7 +56,7 @@ export default {
   display: block;
   margin-bottom: 3rem;
   @media screen and (max-width: 599px) {
-    width: 250px;
+    width: 280px;
   }
 }
 
