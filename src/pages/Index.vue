@@ -1,7 +1,10 @@
 <template>
   <div class="hero">
-    <div>
-      <img src="https://res.cloudinary.com/mahana/image/upload/v1606767323/Website/daysaver-logo_bl3icj.png" />
+    <div class="hero-content">
+      <img
+        src="https://res.cloudinary.com/mahana/image/upload/v1606767323/Website/daysaver-logo_bl3icj.png"
+        alt="Daysaver Migraine Logo"
+      />
       <h1>
         Save the Day,<br class="d-sm-none" />
         Take Back Your Life
@@ -19,7 +22,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
 
 .hero {
@@ -28,11 +31,29 @@ export default {
   justify-content: center;
   align-items: center;
   background-color: rgb(38, 38, 37);
+  background-image: url('../assets/images/bed.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom center;
   padding-left: 15px;
   padding-right: 15px;
   color: #c9cbd4;
   font-family: 'Cabin', sans-serif;
   text-align: center;
+  @media screen and (min-width: 600px) {
+    align-items: start;
+  }
+  @media screen and (min-width: 1600px) {
+    background-size: cover;
+  }
+}
+
+.hero-content {
+  margin-top: -30px;
+  @media screen and (min-width: 600px) {
+    margin-top: 0;
+    padding-top: 8%;
+  }
 }
 
 .hero img {
@@ -40,6 +61,9 @@ export default {
   height: auto;
   display: block;
   margin-bottom: 3rem;
+  @media screen and (max-width: 599px) {
+    width: 250px;
+  }
 }
 
 .hero h1 {
