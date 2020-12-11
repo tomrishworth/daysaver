@@ -3,7 +3,7 @@
     <div class="hero-content">
       <g-image src="~/assets/images/daysaver-logo.png" alt="Daysaver Migraine Logo"></g-image>
       <h1>Take Back Your Life.</h1>
-      <p>Help is coming soon...</p>
+      <!-- <p>Help is coming soon...</p> -->
     </div>
   </div>
 </template>
